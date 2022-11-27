@@ -44,7 +44,6 @@ namespace DashBoard.Repositories
                 else
                     return "Telefone já consta nas bases de dados.";
             }
-
         }
     }
 }

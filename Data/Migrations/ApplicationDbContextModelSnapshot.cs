@@ -73,7 +73,7 @@ namespace DashBoard.Data.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("Cliente");
+                    b.ToTable("Cliente", (string)null);
                 });
 
             modelBuilder.Entity("DashBoard.Models.NewsLetter", b =>
@@ -86,7 +86,7 @@ namespace DashBoard.Data.Migrations
 
                     b.HasKey("Email");
 
-                    b.ToTable("NewsLetter");
+                    b.ToTable("NewsLetter", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

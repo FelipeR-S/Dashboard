@@ -69,3 +69,4 @@ E:\Documentos\FELIPE\Programação\Projetos\DashBoard\DashBoard\obj\Debug\net6.0
 E:\Documentos\FELIPE\Programação\Projetos\DashBoard\DashBoard\obj\Debug\net6.0\DashBoard.pdb
 E:\Documentos\FELIPE\Programação\Projetos\DashBoard\DashBoard\obj\Debug\net6.0\DashBoard.genruntimeconfig.cache
 E:\Documentos\FELIPE\Programação\Projetos\DashBoard\DashBoard\obj\Debug\net6.0\ref\DashBoard.dll
+E:\Documentos\FELIPE\Programação\Projetos\DashBoard\DashBoard\bin\Debug\net6.0\EntityFrameworkCore.EncryptColumn.dll

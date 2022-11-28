@@ -17,6 +17,8 @@ namespace DashBoard.Data
 
             builder.Entity<Cliente>().HasIndex(e => e.Email).IsUnique();
             builder.Entity<NewsLetter>();
+            builder.Entity<User>().HasIndex(e => e.Usuario).IsUnique();
+            builder.Entity<User>().HasIndex(e => e.Email).IsUnique();
         }
     }
 }

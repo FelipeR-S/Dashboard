@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace DashBoard.Models
@@ -40,5 +41,22 @@ namespace DashBoard.Models
 
         [Key]
         public string Email { get; set; } = string.Empty;
+    }
+
+    public class User : BaseModel
+    {
+        public User()
+        {
+        }
+        [Key]
+        public string Matricula { get; set; } = string.Empty;
+        public string Usuario { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string EmailRecuperacao { get; set; } = string.Empty;
+        public string Senha { get; set; } = string.Empty;
+        public string? Telefone { get; set; }
+        public string? Endereco { get; set; }
+        public DateTime DataCadastro { get; private set; } = DateTime.Now;
+
     }
 }

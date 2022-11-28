@@ -20,10 +20,14 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IDataService, DataService>();
 builder.Services.AddTransient<ApplicationDbContext>();
 
-// Cria serviço que gerencia as tabelas de Cadastro de Cliente
+// Cria serviço que gerencia a tabela de Cadastro de Cliente
 builder.Services.AddTransient<ICadastroRepository, CadastroRepository>();
-// Cria serviço que gerencia as tabelas de Cadastro de Email de NewsLetter
+// Cria serviço que gerencia a tabela de Cadastro de Email de NewsLetter
 builder.Services.AddTransient<INewsLetterRepository, NewsLetterRepository>();
+
+// Cria serviço que gerencia a tabela de User
+builder.Services.AddTransient<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IEncryptData, EncryptData>();
 
 var app = builder.Build();
 

@@ -1,5 +1,4 @@
-﻿using EntityFrameworkCore.EncryptColumn.Attribute;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -52,11 +51,8 @@ namespace DashBoard.Models
         [Key]
         public string Matricula { get; set; } = string.Empty;
         public string Usuario { get; set; } = string.Empty;
-        [EncryptColumn]
         public string Email { get; set; } = string.Empty;
-        [EncryptColumn]
         public string EmailRecuperacao { get; set; } = string.Empty;
-        [EncryptColumn]
         public string Senha { get; set; } = string.Empty;
         public string? Telefone { get; set; }
         public string? Endereco { get; set; }

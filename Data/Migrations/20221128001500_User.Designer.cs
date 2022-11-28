@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DashBoard.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221127043503_User")]
+    [Migration("20221128001500_User")]
     partial class User
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
